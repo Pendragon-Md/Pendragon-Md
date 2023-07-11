@@ -1,3 +1,8 @@
+require("dotenv").config();
+let gg = process.env.MODS;
+if (!gg) {
+  gg = "94760510568";   // මෙලෙස දිස්වෙන number එක වෙනස් නොකරන්න  // 
+}
 /*
 
 ██████╗░███████╗███╗░░██╗██████╗░██████╗░░█████╗░░██████╗░░█████╗░███╗░░██╗░░░░░░███╗░░░███╗██████╗░
@@ -7,17 +12,10 @@
 ██║░░░░░███████╗██║░╚███║██████╔╝██║░░██║██║░░██║╚██████╔╝╚█████╔╝██║░╚███║░░░░░░██║░╚═╝░██║██████╔╝
 ╚═╝░░░░░╚══════╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚═════╝░░╚════╝░╚═╝░░╚══╝░░░░░░╚═╝░░░░░╚═╝╚═════╝░
 */
-
-require("dotenv").config();
-
-let gg = process.env.MODS;
-if (!gg) {
-  gg = "94760510568";   // You can replace this number with yours //
-}
-
+//මෙතන හිස් තැන් වල ඔබගේ දත්ත පුරවා Bot ක්‍රියා කරන්න
 
 global.owner = gg.split(",");
-global.mongodb = process.env.MONGODB || "mongodb+srv://queenlara:Dmoa0817.@queenlara.jz3uzcg.mongodb.net/?retryWrites=true&w=majority";
+global.mongodb = process.env.MONGODB || "mongodb+srv://queenlara:Dmoa0817.@queenlara.jz3uzcg.mongodb.net/?retryWrites=true&w=majority"; 
 global.sessionId = process.env.SESSION_ID || "pendragon";
 global.prefa = process.env.PREFIX || ".";
 global.tenorApiKey = process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c";
